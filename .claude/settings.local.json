@@ -4,7 +4,12 @@
       "Bash(pnpm add:*)",
       "Bash(pnpm build:*)",
       "Bash(pnpm dev:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: 建立後台管理系統 UI\n\n- 登入頁面（含測試帳號）\n- 後台 Layout（Sidebar + Header）\n- 園區管理（列表、新增、編輯、刪除 - 使用 Dialog）\n- 用戶管理（列表、詳情 - 使用 Dialog）\n- 假資料（10 筆園區、15 筆用戶）\n- shadcn/ui 元件庫\n- Zustand 狀態管理\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Sidebar 收合功能 + 標籤樣式簡化\n\n- Sidebar 點擊互動（點擊展開/收合）\n- 收合狀態持久化（localStorage）\n- 標籤統一成簡潔灰色樣式\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

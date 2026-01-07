@@ -4,7 +4,7 @@ import { useState, useMemo } from "react"
 import { Plus, Search } from "lucide-react"
 import { useShelterStore } from "@/stores/shelter-store"
 import { CITIES, getDistrictsByCity } from "@/lib/constants"
-import { SHELTER_TAG_LABELS, type ShelterDetail, type ShelterTag } from "@/types"
+import { SHELTER_TAG_LABELS, type ShelterDetail } from "@/types"
 import { Header } from "@/components/layout/header"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -84,10 +84,6 @@ export default function SheltersPage() {
 
   const handleDelete = (id: string) => {
     deleteShelter(id)
-  }
-
-  const getTagVariant = (tag: ShelterTag) => {
-    return tag as "remote" | "appointment" | "small" | "private"
   }
 
   return (
@@ -179,7 +175,7 @@ export default function SheltersPage() {
                     <TableCell>
                       <div className="flex gap-1 flex-wrap">
                         {shelter.tags.map((tag) => (
-                          <Badge key={tag} variant={getTagVariant(tag)}>
+                          <Badge key={tag} variant="tag">
                             {SHELTER_TAG_LABELS[tag]}
                           </Badge>
                         ))}
