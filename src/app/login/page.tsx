@@ -91,10 +91,6 @@ export default function LoginPage() {
               {form.isLoading ? "登入中..." : "登入"}
             </Button>
           </form>
-          <div className="mt-4 text-center text-sm text-muted-foreground">
-            <p>測試帳號：admin@ptalk.com</p>
-            <p>測試密碼：123456</p>
-          </div>
         </CardContent>
       </Card>
     </div>
